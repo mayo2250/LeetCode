@@ -4,7 +4,7 @@ class Solution {
         int min=1000000000;
         for(int i=0;i<n;i++) if(nums[i]<min) min=nums[i];
         int max=0;
-        int c1=-1;
+        int c1=1;
         int result = -1;
         for(int i=0;i<n;i++){
             if(nums[i]>max) max=nums[i];
