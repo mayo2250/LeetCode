@@ -2,7 +2,7 @@ class Solution {
     public int firstStableIndex(int[] nums, int k) {
         int n = nums.length;
         int min=1000000000;
-        for(int i=0;i<n;i++) if(nums[i]<min) min=nums[i];
+        // for(int i=0;i<n;i++) if(nums[i]<min) min=nums[i];
         int max=0;
         int c1=1;
         int result = -1;
