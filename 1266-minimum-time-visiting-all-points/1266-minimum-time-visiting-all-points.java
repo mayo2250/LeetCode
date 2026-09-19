@@ -13,7 +13,8 @@ class Solution {
             dx=Math.abs(x1-x2);
             dy=Math.abs(y1-y2);
 
-            res+=Math.max(dx,dy);
+            // res+=Math.max(dx,dy);
+            res+=Math.max(Math.abs(points[i][0] - points[i+1][0]),Math.abs(points[i][1] - points[i+1][1]));
         }
         return res;
     }
