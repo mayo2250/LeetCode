@@ -1,13 +1,11 @@
 class Solution {
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
-        // int m1=0,m2=0;
         int m=nums1.length,n=nums2.length;
         int t=m+n;
         int c1 = t%2;
         int i=0,j=0;
         int a=0,b=0;
         for(int c=0;c<=(t/2);c++){
-            // System.out.println(j);
             if(i<m && (j>=n || nums1[i]<=nums2[j])){
                 a=b;
                 b=nums1[i];
